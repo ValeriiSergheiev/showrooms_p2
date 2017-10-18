@@ -1,0 +1,193 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+	.item-ratings {
+		span {
+			display: none;
+		}
+	}
+
+	.coupon-item-header-list {
+		button {
+			left: 30px;
+			width: calc(100% - 60px);
+		}
+	}
+
+}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+
+		.sidebar-left {
+			margin-bottom: 20px;
+		}
+
+		.footer-bottom-left {
+			float: none;
+		}
+
+		.footer-bottom-right {
+			float: none;
+			margin-top: 20px;
+		}
+
+		.white-popup {
+			margin: 60px auto 0;
+		}
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+
+		.menu {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			top: 53px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 20px 0;
+			background-color: #fff;
+			border-top: 3px solid $grey;
+			li {
+				float: none;
+				margin-right: 0;
+				border-bottom: 1px solid $grey;
+				&:last-child {
+					border-bottom: none;
+				}
+				a {
+					display: block;
+					text-align: center;
+					padding: 15px 0;
+				}
+			}
+
+		}
+
+		.site-logo {
+			padding-top: 0;
+		}
+
+		.mob-menu-btn {
+			display: block;
+		}
+
+		.slider-item-info-left {
+			float: none;
+			width: 100%;
+		}
+
+		.slider-item-info-right {
+			float: none;
+			width: 100%;
+		}
+
+		.slider-item-info {
+			position: static;
+		}
+
+		.discount-first {
+			input {
+				width: 100%;
+			}
+		}
+
+		.block-title-left, .block-title-right, .socials {
+			float: none;
+		}
+
+		.block-title-left {
+			border-bottom: 1px solid $grey;
+		}
+
+		.block-title-right {
+			text-align: center;
+			span {
+				line-height: 40px;
+			}
+		}
+
+		.socials {
+			margin: 0;
+			margin-bottom: 20px;
+			text-align: center;
+			a {
+				margin: 0 5px;
+			}
+		}
+
+		.featured-stores-title {
+			margin-right: 0;
+		}
+
+		.featured-stores-slider {
+			margin-left: 0;
+		}
+
+		.discount-item {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.coupon-item-header-list {
+			float: none;
+			width: 100%;
+		}
+
+		.coupon-item-body-list {
+			float: none;
+			width: 100%;
+		}
+
+		.coupon-item-header-list {
+			button {
+				left: 50px;
+				width: calc(100% - 100px);
+			}
+		}
+
+		.coupon-item-body-list {
+			border-left: none;
+		}
+
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+		.tabs-panel {
+			li {
+				border-right: none;
+				border-bottom: 1px solid $grey;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		.block-title-left {
+			i {
+				display: none;
+			}
+		}
+
+		.view-mode li i {
+			display: inline;
+		}
+
+		.coupon-item-header-list {
+			button {
+				bottom: 0;
+			}
+		}
+
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}

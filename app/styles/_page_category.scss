@@ -1,0 +1,76 @@
+/* Page 2.1 */
+.page-title {
+	@extend .home-page-title;
+	background-color: #5b0f70;
+	background-image: url('../images/inner-bckg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 60px;
+}
+
+.sidebar-left-bottom {
+	@extend .sidebar-left;
+	margin-top: 40px;
+}
+
+.sidebar-store-list li {
+	text-align: center;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.block-title-stores {
+	padding-bottom: 20px;
+	.block-title-left {
+		float: none;
+		border-bottom: 1px solid $grey;
+	}
+}
+
+.block-title-stores-list {
+	padding: 20px;
+	overflow: hidden;
+	transition: $transition;
+	li {
+		float: left;
+		display: block;
+		width: 33.3%;
+		a {
+			display: block;
+			padding: 5px 0;
+			text-align: center;
+		}
+	}
+	& + a {
+		display: block;
+		width: 150px;
+		margin: 10px auto 0;
+		text-align: center;
+	}
+}
+
+//Tabs
+.tabs-panel {
+	li {
+		float: left;
+		display: block;
+		border-right: 1px solid $grey;
+		a {
+			display: block;
+			color: #515151;
+			font-family: 'Ubuntu';
+			font-weight: 700;
+			text-transform: uppercase;
+			height: 64px;
+			line-height: 64px;
+			border: 1px solid #fff;
+			border-right: none;
+			padding: 0 10px;
+			&:hover {
+				background-color: $grey;
+				color: $purple;
+			}
+		}
+	}
+}
+/* End Page 2.1 */

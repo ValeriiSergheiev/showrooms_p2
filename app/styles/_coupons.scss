@@ -1,0 +1,84 @@
+/* Coupons Page*/
+//Coupon table
+.coupon-item-table {
+	@extend .discount-item;
+}
+
+.coupon-item-header {
+	@extend .discount-item-header;
+}
+
+.coupon-item-body {
+	@extend .discount-item-body;
+}
+
+.red-label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 120px;
+	height: 80px;
+	background-color: $red;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Ubuntu';
+	font-weight: 700;
+	span {
+		display: block;
+	}
+}
+
+//Coupon list
+.coupon-item-list {
+	@extend .discount-item;
+}
+
+.coupon-item-header-list {
+	@extend .discount-item-header;
+	float: left;
+	height: 200px;
+	width: 40%;
+	button {
+		left: 50px;
+		width: calc(100% - 100px);
+		bottom: 10px;
+	}
+}
+
+.coupon-item-body-list {
+	@extend .discount-item-body;
+	float: left;
+	width: 60%;
+	height: auto;
+	border-left: 1px solid $grey;
+}
+
+.coupon-list-text {
+	margin-bottom: 10px;
+	overflow: hidden;
+	transition: $transition;
+}
+
+.coupon-item-list-bottom {
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid $grey;
+	li {
+		color: #7c7c7c;
+	}
+	i {
+		margin-right: 5px;
+	}
+	span {
+		font-weight: 700;
+	}
+}
+/* End Coupons Page*/

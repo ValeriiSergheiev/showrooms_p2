@@ -1,0 +1,618 @@
+/* *** Home page *** */
+#home-page-main {
+	background-image: url('../images/main-background1.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+//Home page title section
+.home-page-title {
+	padding: 70px 0 40px;
+	h1 {
+		font-family: 'Ubuntu';
+		font-weight: 700;
+		color: #fff;
+		font-size: 35px;
+		line-height: 55px;
+		margin-bottom: 0;
+	}
+	h5 {
+		font-family: 'Ubuntu';
+		color: #fff;
+		font-size: 18px;
+		line-height: 32px
+	}
+}
+
+//Home page search box section
+.home-page-search-box {
+	margin-bottom: 70px;
+}
+
+.input-box {
+	box-shadow: 0 0 0 4px rgba(255, 255, 255, .2);
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 7px;
+	input {
+		display: block;
+		width: 80%;
+		height: 44px;
+		padding: 0;
+		background-color: #fff;
+		border: none;
+		color: #2f3336;
+		font-size: 13px;
+		padding: 0 15px;
+		&:focus {
+			background-color: transparent;
+			color: #fff;
+			transition: all .2s linear;
+		}
+	}
+	button {
+		width: 20%;
+		text-indent: 0;
+		background-color: $green;
+		height: 44px;
+		padding: 0;
+		border: none;
+		font-family: 'Ubuntu';
+		letter-spacing: .5px;
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 700;
+		cursor: pointer;
+		&:hover {
+			background-color: darken($green, 10%);
+			transition: all .2s linear;
+		}
+	}
+	& + small {
+		padding-left: 20px;
+		color: rgba(255, 255, 255, .4);
+	}
+}
+
+//Home page top content / Sidebar
+.sidebar-left {
+	position: relative;	
+	background-color: #fff;
+	&::before {
+		box-sizing: border-box;
+		content: " ";
+		position: absolute;
+		bottom: 0;
+		left: 14%;
+		height: 2px;
+		width: 70%;
+		z-index: -1;
+		box-shadow: 0 -4px 21px 1px rgba(0, 0, 0, .6);
+	}
+}
+
+.sidebar-title {
+	padding: 10px 0 10px 20px;
+	border-bottom: 1px solid $grey;
+	span {
+		font-family: 'Ubuntu';
+		font-weight: 700;
+		font-size: 22px;
+		color: $purple;
+	}
+}
+
+.sidebar-list {
+	li {
+		border-bottom: 1px solid $grey;
+		a {
+			display: block;
+			line-height: 37px;
+			color: #515151;
+			transition: all .2s linear;
+			&:hover {
+				background-color: $grey;
+				color: $purple;
+				i {
+					background-color: $purple;
+					transition: all .2s linear;
+					color: #fff;
+				}
+			}
+			i {
+				height: 37px;
+				width: 40px;
+				font-size: 15px;
+				line-height: 36px;
+				text-align: center;
+				border-right: 1px solid $grey;
+				margin-right: 10px;
+				color: #c1c2c2;
+			}
+		}
+	}
+}
+
+.all-category-link {
+	text-align: center;
+}
+
+//Home page top content / Slider
+.home-page-slider {
+	overflow: hidden;
+	.slick-prev {
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: -50px;
+		z-index: 100;
+		width: 46px;
+		height: 46px;
+		border: none;
+		background-color: #fff;
+		transition: $transition;
+		i {
+			font-size: 22px;
+			color: #2f3336;
+		}
+	}
+	.slick-next {
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		right: -50px;
+		z-index: 100;
+		width: 46px;
+		height: 46px;
+		border: none;
+		background-color: #fff;
+		transition: $transition;
+		i {
+			font-size: 22px;
+			color: #2f3336;
+		}
+	}
+	&:hover .slick-prev {
+		visibility: visible;
+		left: 0;
+	}
+	&:hover .slick-next {
+		visibility: visible;
+		right: 0;
+	}
+}
+
+.home-page-slider-item {
+	position: relative;
+	&:focus {
+		outline: none;
+	}
+}
+
+.slider-item-info {
+	position: absolute;
+	background-color: #fff;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 20px;
+}
+
+.slider-item-info-left {
+	float: left;
+	width: 60%;
+	article {
+		font-family: 'Ubuntu';
+		margin: 10px 0;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 36px;
+	}
+}
+
+.ratings {
+	li {
+		display: block;
+		float: left;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+			font-size: 11px;
+		}
+	}
+}
+
+.item-ratings {
+	i {
+		font-size: 15px;
+		color: $yellow;
+		margin-right: 3px;
+	}
+	span {
+		font-size: 11px;
+		vertical-align: top;
+	}
+}
+
+
+
+.slider-item-info-left-bottom {
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+		i {
+			margin-right: 3px;
+		}
+	}
+}
+
+.slider-item-info-right {
+	float: right;
+	width: 40%;
+	text-align: right;
+	button {
+		display: inline-block;
+		border: none;
+		font-family: 'Ubuntu';
+		font-weight: 700;
+		font-size: 14px;
+		padding: 8px 25px;
+		background-color: $green;
+		color: #fff;
+		text-transform: uppercase;
+		margin-top: 27px;
+		i {
+			margin-right: 10px;
+		}
+		&:hover {
+			background-color: darken($green, 10%);
+			transition: $transition;
+		}
+	}
+}
+
+//Discount first
+.discount-first {
+	box-shadow: $box-shadow;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 15px 20px;
+	p {
+		font-family: 'Ubuntu';
+		font-weight: 700;
+		font-size: 22px;
+		font-weight: 700;
+	}
+	input {
+		border-radius: 8px;
+		height: 44px;
+		border: 1px solid darken($grey, 10%);
+		padding: 0 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: 280px;
+	}
+	button {
+		border: none;
+		height: 42px;
+		width: 150px;
+	}
+}
+
+//Block title
+.block-title {
+	margin: 40px 0;
+	background-color: #fff;
+	box-shadow: $box-shadow;
+}
+
+.block-title-left {
+	float: left;
+	i {
+		text-align: center;
+		height: 64px;
+		width: 64px;
+		line-height: 64px;
+		font-size: 22px;
+		border-right: 1px solid $grey;
+		color: $purple;
+	}
+	span {
+		font-family: 'Ubuntu';
+		font-size: 22px;
+		font-weight: 700;
+		margin-left: 20px;
+		line-height: 64px;
+	}
+}
+
+.view-mode {
+	li {
+		display: block;
+		float: left;
+		margin-left: 20px;
+		span {
+			color: #7c7c7c;
+			font-size: 18px;
+		}
+		i {
+			color: #7c7c7c;
+			border-right: none;
+			font-size: 18px;
+			width: auto;
+			padding-top: 2px;
+			&:hover {
+				color: $purple;
+				transition: $transition;
+			}
+		}
+	}
+}
+
+.block-title-right {
+	float: right;
+	span {
+		font-family: 'Ubuntu';
+		font-size: 11px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 64px;
+	}
+}
+
+.socials {
+	float: right;
+	margin-left: 20px;
+	margin-top: 16px;
+	a {
+		display: inline-block;
+		text-align: center;
+		margin-right: 10px;
+		padding: 5px;
+		width: 30px;
+		height: 30px;
+		font-size: 16px;
+		border-radius: 20px;
+		color: #fff;
+		&:hover {
+			opacity: .8;
+			transition: $transition;
+			color: #fff;
+		}
+	}
+}
+
+.fb {
+	background-color: #3b5998;
+}
+
+.vk {
+	background-color: #4C75A3;
+}
+
+.tw {
+	background-color: #00aced;
+}
+
+.gplus {
+	background-color: #dd4b39;
+}
+
+//Featured stores
+.featured-stores {
+	margin: 80px 0;
+	box-shadow: $box-shadow;
+	background-color: #fff;
+}
+
+.featured-stores-title {
+	background-color: $purple;
+	margin-right: -15px;
+	padding: 30px;
+	color: #fff;
+	span {
+		display: inline-block;
+		font-size: 28px;
+		line-height: 1.1;
+		margin-bottom: 20px;
+	}
+}
+
+.featured-stores-slider {
+	background-color: #fff;
+	margin-left: -15px;
+	@extend .home-page-slider;
+	.slick-prev, .slick-next {
+		background-color: $grey;
+		top: auto;
+		bottom: 0;
+	}
+}
+
+.featured-stores-slider-item {
+	outline: none;
+	a {
+		display: flex;
+		align-items: center;
+		vertical-align: middle;
+		height: 196px;
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+//Discount block
+.discount-item {
+	background-color: #fff;
+	box-shadow: $box-shadow;
+	margin-bottom: 20px;
+}
+
+.discount-item-header {
+	position: relative;
+	button {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border: none;
+		cursor: pointer;
+		border: none;
+	}
+}
+
+.discount-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+}
+
+.profit {
+	display: block;
+	padding: 10px;
+	background: $red;
+	font-family: Open Sans, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	width: auto;
+	max-width: 90%;
+	position: absolute;
+	height: 40px;
+	top: 10px;
+	z-index: 1;
+	&::before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: 100%;
+		top: 0px;
+		margin-left: -20px;
+		border-top: 20px solid #fc2a00;
+		border-left: 20px solid transparent;
+		border-bottom: 20px solid #fc2a00;
+		border-right: 20px solid transparent;
+	}
+}
+
+.discount-item-body {
+	position: relative;
+	padding: 15px;
+	height: 200px;
+	.ratings {
+		li:last-child {
+			float: right;
+		}
+	}
+	p {
+		font-size: 16px;
+		margin-top: 30px;
+	}
+}
+
+.discount-item-body-links {
+	position: absolute;
+	bottom: 15px;
+	left: 20px;
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		color: #7c7c7c;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.discount-item-footer {
+	border-top: 1px solid $grey;
+	padding: 15px;
+	p {
+		font-size: 26px;
+		color: $purple;
+		span {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			color: #adadad;
+			text-decoration: line-through;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	}
+	button {
+		border: none;
+	}
+}
+
+//Blog section
+.blog-reviews-item {
+	@extend .discount-item;
+}
+
+.blog-reviews-item-header {
+	position: relative;
+	a {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.blog-reviews-item-body {
+	height: 200px;
+	padding: 15px;
+	overflow: hidden;
+	span {
+		font-size: 11px;
+		color: #7c7c7c;
+	}
+	a {
+		display: block;
+		font-size: 16px;
+		margin: 15px 0;
+	}
+	article {
+		line-height: 23px;
+		text-align: justify;
+	}
+}
+
+.blog-reviews-item-footer {
+	padding: 15px;
+	color: #7c7c7c;
+}
+
+//Text block
+.text-block {
+	background-color: #fff;
+	margin-top: 60px;
+	padding: 20px;
+	span {
+		font-size: 22px;
+	}
+	article {
+		line-height: 23px;
+		margin: 20px 0;
+		text-align: justify;
+		//height: 50px;
+		overflow: hidden;
+		transition: $transition;
+	}
+	div {
+		text-align: center;
+		button {
+			border: none;
+		}
+	}
+}
+
+.collapse-text {
+	height: auto !important;
+}
+/* *** End Home page *** */

@@ -1,0 +1,50 @@
+/* Header */
+header {
+	background-color: #fff;
+	//position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	box-shadow: $box-shadow;
+}
+
+.site-logo {
+	display: block;
+	padding-top: 3px;
+	img {
+		height: 53px;
+		width: auto;
+	}
+}
+
+.menu {
+	float: right;
+	//padding: 30px 0;
+	li {
+		display: block;
+		float: left;
+		margin-right: 40px;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			display: inline-block;
+			font-family: 'Ubuntu', sans-serif;
+			//line-height: 26px;
+			padding: 20px 0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.mob-menu-btn {
+	display: none;
+	float: right;
+	margin-top: 15px;
+	i {
+		font-size: 21px;
+	}
+}
+/* End Header */

@@ -1,0 +1,16 @@
+/* Product page */
+.sidebar-text {
+	padding: 15px;
+	span {
+		font-weight: 700;
+	}
+	p {
+		margin-top: 10px;
+		line-height: 26px;
+		text-align: justify;
+		color: #515151;
+		overflow: hidden;
+		transition: $transition;
+	}
+}
+/* End Product page */
