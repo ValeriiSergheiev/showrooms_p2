@@ -117,4 +117,55 @@ button.mfp-close {
 		}
 	}
 }
+
+.product-popup-header {
+	padding: 0 20px;
+	img {
+		float: left;
+		display: block;
+		max-width: 25px;
+		height: auto;
+	}
+	h4 {
+		float: left;
+		font-family: 'Ubuntu';
+		font-size: 18px;
+		font-weight: 700;
+		padding: 0 10px;
+	}
+}
+
+.product-popup-body {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin: 20px 0;
+	padding: 40px 20px;
+}
+
+.product-popup-body-left {
+	float: left;
+	width: 50%;
+	img {
+		display: block;
+		width: 100%;
+		max-width: 200px;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+.product-popup-body-right {
+	float: right;
+	width: 50%;
+	padding-left: 10px;
+	button {
+		border: none;
+		text-transform: none;
+	}
+	p {
+		line-height: 19px;
+		text-align: justify;
+		margin-top: 20px;
+	}
+}
 /* End Popups */
